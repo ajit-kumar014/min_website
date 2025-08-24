@@ -42,7 +42,7 @@ export const PROJECTS: Project[] = [
     description: 'Self-Hosted Home Server setup using my old laptop',
     link: 'https://motion-primitives.com/',
     video:
-      'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.redd.it%2Fy25wg3wnm6u91.png&f=1&nofb=1&ipt=d52700996fd6399182af38e95716ae444db464413e11e4b19c504caa23d0fe67',
+      'https://youtu.be/yul4gq_LrOI',
     id: 'project2',
   },
 ]
