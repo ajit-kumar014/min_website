@@ -29,7 +29,7 @@ type SocialLink = {
 
 export const PROJECTS: Project[] = [
   {
-    name: 'Motion Primitives Pro',
+    name: 'Amazon Price Tracker Bot',
     description:
       'Advanced components and templates to craft beautiful websites.',
     link: 'https://pro.motion-primitives.com/',
@@ -49,9 +49,9 @@ export const PROJECTS: Project[] = [
 
 export const WORK_EXPERIENCE: WorkExperience[] = [
   {
-    company: 'Reglazed Studio',
-    title: 'CEO',
-    start: '2024',
+    company: 'Vetty',
+    title: 'Backend Developer Intern',
+    start: 'March 2025',
     end: 'Present',
     link: 'https://ibelick.com',
     id: 'work1',
@@ -106,7 +106,7 @@ export const BLOG_POSTS: BlogPost[] = [
 export const SOCIAL_LINKS: SocialLink[] = [
   {
     label: 'Github',
-    link: 'https://github.com/ibelick',
+    link: 'https://github.com/ajit-kumar014',
   },
   {
     label: 'Twitter',
@@ -114,7 +114,7 @@ export const SOCIAL_LINKS: SocialLink[] = [
   },
   {
     label: 'LinkedIn',
-    link: 'https://www.linkedin.com/in/ibelick',
+    link: 'https://www.linkedin.com/in/ajitkumar014',
   },
   {
     label: 'Instagram',
@@ -122,4 +122,4 @@ export const SOCIAL_LINKS: SocialLink[] = [
   },
 ]
 
-export const EMAIL = 'your@email.com'
+export const EMAIL = 'ajit07kumar03@gmail.com'
