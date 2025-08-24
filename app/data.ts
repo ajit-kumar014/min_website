@@ -53,7 +53,7 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     title: 'Backend Developer Intern',
     start: 'March 2025',
     end: 'Present',
-    link: 'https://ibelick.com',
+    link: 'https://www.vetty.co/',
     id: 'work1',
   }
 ]
