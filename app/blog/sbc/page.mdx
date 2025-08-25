@@ -13,54 +13,92 @@ export const metadata = {
   caption="Raspberry Pi 4(2GB) & Radaxa Zero 3E"
 />
 
-# [GitHub Link](https://github.com/ajit-kumar014/wifi_based_pump_automation)
-
-# Wi-Fi based pump automation by water %
-
-Manually turning water pumps on and off often leads to overflow, dry running, and water wastage. To solve this, I built a Wi-Fi–based smart pump automation system using an ESP8266 NodeMCU, ultrasonic sensor, and SSR-40A relay. The system automatically controls the pump based on the water level percentage in the tank and integrates with Home Assistant for remote monitoring and manual control.
+# Why You Should Consider Buying Single Board Computers (SBCs) in 2025
+Traditional desktop computers are becoming increasingly overkill for many everyday tasks, while being power-hungry, expensive, and bulky. Single Board Computers offer a compelling alternative in 2025, providing sufficient computing power for most users while being energy-efficient, affordable, and incredibly versatile. Whether you're a hobbyist, developer, or looking for a cost-effective computing solution, SBCs have evolved to meet modern computing needs with remarkable capabilities.
 
 ---
 
-## Components Used  
+## Key Advantages of SBCs in 2025
 
-- **ESP8266 NodeMCU** → Wi-Fi microcontroller running ESPHome for automation and communication.  
-- **Ultrasonic Sensor (JSN-SR04T / HC-SR04)** → Measures distance to water surface and converts it into tank water percentage.  
-- **SSR-40A Solid-State Relay** → Safely switches the water pump ON/OFF based on ESP8266 signals.  
-- **Water Pump** → The load being controlled to fill the tank automatically.  
-- **Home Assistant** → Smart home platform for real-time monitoring, alerts, and manual pump control via Wi-Fi.  
+- **Dramatic Performance Improvements** - Modern SBCs now feature multi-core ARM processors, up to 8GB RAM, and dedicated AI acceleration chips capable of handling 4K video, light desktop computing, and machine learning tasks.
 
----
+- **Exceptional Energy Efficiency** - Consuming only 5-15W compared to 150-300W for traditional desktops, SBCs reduce electricity costs by 90% while providing always-on capabilities without guilt.
 
-## 🔹 Working Principle  
+- **Unprecedented Affordability** - Complete systems starting at $35-75, making computing accessible globally and enabling multiple-device setups for specialized tasks without breaking the budget.
 
-- **Water Level Detection** → The ultrasonic sensor measures the distance from the tank top to the water surface.  
-- **Data Processing** → ESP8266 running ESPHome converts this distance into a percentage value.  
-- **Pump Control** → Based on set thresholds, ESP8266 triggers the SSR-40A relay to switch the water pump ON or OFF.  
-- **Wi-Fi Monitoring** → The data is sent over Wi-Fi to Home Assistant for live tracking.  
-- **Manual Override** → Users can control the pump manually through the Home Assistant dashboard if required.  
+- **GPIO Hardware Interface** - Direct access to GPIO pins enables seamless integration with sensors, motors, LEDs, and other hardware components for IoT and automation projects.
 
----
+- **Compact Form Factor** - Credit card-sized boards that fit anywhere, perfect for embedded systems, portable projects, and space-constrained environments.
 
-## 🔹 Features  
+- **Mature Ecosystem** - Extensive community support, pre-built operating systems, comprehensive documentation, and thousands of tutorials make getting started easier than ever.
 
-- **Automatic Control** → Pump turns ON/OFF based on water % levels.  
-- **Prevents Water Wastage** → Stops overflow and avoids dry running.  
-- **Real-Time Monitoring** → View tank % and pump status in Home Assistant.  
-- **Manual Override** → Control the pump remotely from any device.  
-- **Safe Operation** → SSR relay ensures reliable and durable switching.  
+## Popular SBC Options in 2025
 
-## 🔹 Benefits  
+- **Raspberry Pi 5** - The gold standard with 2.4GHz quad-core CPU, up to 8GB RAM, dual 4K display support, and the largest community ecosystem.
 
-- **Saves Water** → Eliminates overflow and reduces wastage.  
-- **Energy Efficient** → Pump operates only when required.  
-- **Convenient** → No more manual switching.  
-- **Smart Control** → Monitor and operate via Home Assistant app.  
-- **Scalable** → Can be extended with sensors like flow meters, TDS, or pressure sensors.  
+- **Orange Pi 5 Plus** - High-performance option with 8-core ARM processor, up to 32GB RAM, M.2 SSD support, and excellent price-to-performance ratio.
 
----
+- **Rock Pi 4** - Powerful alternative with 6-core processor, 4GB RAM, USB 3.0, and native Android/Linux support for multimedia applications.
 
-### Products Link
+- **NVIDIA Jetson Nano** - AI-focused board with 128-core GPU, perfect for machine learning, computer vision, and robotics projects requiring hardware acceleration.
 
-- [SSR-40A](https://robocraze.com/products/fotek-24v-380v-40amp-250v-ssr-40-da-solid-state-relay-module)
-- [ESP8266](https://robocraze.com/products/lolin-nodemcu-esp8266-wifi-module)
-- [WaterProof Ultrasonic Sensor](https://robocraze.com/products/waterproof-ultrasonic-sensor?variant=40193420558489)
+- **Pine64 RockPro64** - Open-source focused with 6-core ARM processor, PCIe slot, and strong privacy-oriented community support.
+
+## Primary Use Cases
+
+- **Home Server & NAS** - Run Plex media servers, file storage, backup systems, and home automation hubs with 24/7 reliability at minimal power cost.
+
+- **Development & Learning** - Perfect for learning programming, electronics, Linux administration, and computer science concepts without expensive hardware.
+
+- **IoT & Automation** - Control smart home devices, sensors, cameras, and automation systems with direct GPIO access and wireless connectivity.
+
+- **Media Centers** - Stream 4K content, run Kodi or Emby, retro gaming emulation, and digital signage applications with HDMI output.
+
+- **Edge Computing** - Deploy AI models locally, process sensor data in real-time, and run applications closer to data sources for reduced latency.
+
+- **Educational Projects** - Teach coding, electronics, networking, and system administration with hands-on, affordable hardware that students can own.
+
+## Cost Comparison Analysis
+
+| Component | Traditional Desktop | SBC Setup | Savings |
+|-----------|-------------------|-----------|---------|
+| Base Unit | $500-800 | $50-100 | 85-90% |
+| Annual Power Cost | $150-300 | $15-30 | 90% |
+| Storage | $50-100 | $20-40 | 60% |
+| Accessories | $100-200 | $30-50 | 75% |
+| **Total First Year** | **$800-1400** | **$115-220** | **80-85%** |
+
+## Getting Started Recommendations
+
+1. **Choose Your Board** - Start with Raspberry Pi 5 (4GB) for best community support and documentation availability.
+
+2. **Essential Accessories** - Get a quality microSD card (32GB+), USB-C power supply, micro-HDMI cable, and basic GPIO starter kit.
+
+3. **Operating System** - Install Raspberry Pi OS for beginners, Ubuntu for desktop use, or specialized distributions for specific applications.
+
+4. **First Projects** - Begin with LED blinking, temperature monitoring, or setting up a basic web server to learn GPIO and software basics.
+
+5. **Join Communities** - Engage with Reddit communities, official forums, and local maker spaces for support and project inspiration.
+
+## Performance Expectations
+
+**What SBCs Handle Well:**
+- Web browsing and email
+- Office productivity tasks
+- 1080p/4K video streaming
+- Basic photo editing
+- Programming and development
+- Server applications
+- IoT data collection
+
+**Current Limitations:**
+- Heavy video editing
+- AAA gaming
+- Large dataset processing
+- Multiple VM instances
+- CAD/3D rendering
+- Professional audio production
+
+## Future Outlook
+
+The SBC market in 2025 shows tremendous momentum with ARM processors approaching desktop-class performance, AI acceleration becoming standard, and prices continuing to decrease. Major trends include better software optimization, expanded peripheral support, and integration with edge computing infrastructure. SBCs are positioned to become the default choice for many computing tasks traditionally requiring full desktop systems.
