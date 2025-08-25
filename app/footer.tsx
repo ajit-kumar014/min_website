@@ -72,7 +72,7 @@ export function Footer() {
       <div className="flex items-center justify-between">
         <a href="https://nextjs.org/" target="_blank">
           <TextLoop className="text-xs text-zinc-500">
-            <span>© 2024 Nim.</span>
+            <span>© 2025 </span>
             <span>Built with NodeJS.</span>
           </TextLoop>
         </a>
