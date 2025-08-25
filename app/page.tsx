@@ -33,11 +33,13 @@ const VARIANTS_SECTION = {
 
 const TRANSITION_SECTION = { duration: 0.3 }
 
-type ProjectVideoProps = { src: string }
+type ProjectMediaProps = { src: string }
 
-// ProjectVideo supporting local videos and YouTube links
-function ProjectVideo({ src }: ProjectVideoProps) {
+// ✅ ProjectMedia supports YouTube, direct videos, and images
+function ProjectMedia({ src }: ProjectMediaProps) {
   const isYoutube = src.includes('youtube.com') || src.includes('youtu.be')
+  const isVideo = /\.(mp4|webm|ogg)(\?.*)?$/i.test(src)
+  const isImage = /\.(jpg|jpeg|png|gif|webp|avif|svg)(\?.*)?$/i.test(src)
 
   const getYoutubeEmbedUrl = (url: string) => {
     const ytMatch = url.match(
@@ -53,12 +55,12 @@ function ProjectVideo({ src }: ProjectVideoProps) {
           <div className="relative aspect-video w-full rounded-xl overflow-hidden">
             <iframe
               src={getYoutubeEmbedUrl(src)}
-              className="absolute inset-0 w-full h-full"
+              className="absolute inset-0 h-full w-full"
               allow="autoplay; encrypted-media"
               allowFullScreen
             />
           </div>
-        ) : (
+        ) : isVideo ? (
           <video
             src={src}
             autoPlay
@@ -66,29 +68,40 @@ function ProjectVideo({ src }: ProjectVideoProps) {
             muted
             className="aspect-video w-full cursor-zoom-in rounded-xl"
           />
-        )}
+        ) : isImage ? (
+          <img
+            src={src}
+            alt="Project preview"
+            className="aspect-video w-full cursor-zoom-in rounded-xl object-cover"
+          />
+        ) : null}
       </MorphingDialogTrigger>
 
       <MorphingDialogContainer>
         <MorphingDialogContent className="relative aspect-video rounded-2xl bg-zinc-50 p-1 ring-1 ring-zinc-200/50 ring-inset dark:bg-zinc-950 dark:ring-zinc-800/50">
           {isYoutube ? (
-            <div className="relative aspect-video w-full rounded-xl overflow-hidden">
-              <iframe
-                src={getYoutubeEmbedUrl(src)}
-                className="absolute inset-0 w-full h-full"
-                allow="autoplay; encrypted-media"
-                allowFullScreen
-              />
-            </div>
-          ) : (
+            <iframe
+              src={getYoutubeEmbedUrl(src)}
+              className="absolute inset-0 h-full w-full"
+              allow="autoplay; encrypted-media"
+              allowFullScreen
+            />
+          ) : isVideo ? (
             <video
               src={src}
               autoPlay
               loop
               muted
+              controls
               className="aspect-video h-[50vh] w-full rounded-xl md:h-[70vh]"
             />
-          )}
+          ) : isImage ? (
+            <img
+              src={src}
+              alt="Project preview expanded"
+              className="h-[50vh] w-full rounded-xl object-contain md:h-[70vh]"
+            />
+          ) : null}
         </MorphingDialogContent>
 
         <MorphingDialogClose
@@ -160,7 +173,7 @@ export default function Personal() {
           {PROJECTS.map((project) => (
             <div key={project.name} className="space-y-2">
               <div className="relative rounded-2xl bg-zinc-50/40 p-1 ring-1 ring-zinc-200/50 ring-inset dark:bg-zinc-950/40 dark:ring-zinc-800/50">
-                <ProjectVideo src={project.video} />
+                <ProjectMedia src={project.video} />
               </div>
               <div className="px-1">
                 <a
