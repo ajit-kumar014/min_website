@@ -64,6 +64,12 @@ export const BLOG_POSTS: BlogPost[] = [
     description: 'Wi-Fi based pump automation using ESP8266, ESPHome, Ultrasonic sensor, and SSR-40A, integrated with Home Assistant for smart control by tank water %.',
     link: '/blog/exploring-the-intersection-of-design-ai-and-design-engineering',
     uid: 'blog-1',
+  },
+  {
+    title: 'Why You Should Consider Buying Single Board Computers (SBCs) in 2025',
+    description: "Discover why Single Board Computers (SBCs) are worth considering in 2025. From affordability and versatility to DIY projects and edge computing, learn how SBCs can power innovation and everyday use cases."
+    link: '/blog/exploring-the-intersection-of-design-ai-and-design-engineering',
+    uid: 'blog-2',
   }
 ]
 
