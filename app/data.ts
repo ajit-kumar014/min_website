@@ -40,7 +40,7 @@ export const PROJECTS: Project[] = [
   {
     name: 'HomeServer',
     description: 'Self-Hosted Home Server setup using my old laptop',
-    link: 'https://youtu.be/yul4gq_LrOI',
+    link: 'https://wallpaperaccess.com/full/4172522.jpg',
     video:
       'https://youtu.be/yul4gq_LrOI',
     id: 'project2',
