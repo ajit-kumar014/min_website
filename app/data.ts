@@ -42,7 +42,7 @@ export const PROJECTS: Project[] = [
     description: 'Self-Hosted Home Server setup using my old laptop',
     link: 'https://wallpaperaccess.com/full/4172522.jpg',
     video:
-      'https://youtu.be/yul4gq_LrOI',
+      'https://wallpaperaccess.com/full/4172522.jpg',
     id: 'project2',
   },
 ]
