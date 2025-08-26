@@ -73,7 +73,7 @@ export function Footer() {
         <a href="https://nextjs.org/" target="_blank">
           <TextLoop className="text-xs text-zinc-500">
             <span>© 2025 </span>
-            <span>Built with NodeJS.</span>
+            <span>Built with NextJS.</span>
           </TextLoop>
         </a>
         <div className="text-xs text-zinc-400">
