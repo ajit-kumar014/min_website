@@ -60,8 +60,8 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
 
 export const BLOG_POSTS: BlogPost[] = [
   {
-    title: 'Wi-Fi based pump automation by water %',
-    description: 'Wi-Fi based pump automation using ESP8266, ESPHome, Ultrasonic sensor, and SSR-40A, integrated with Home Assistant for smart control by tank water %.',
+    title: 'Wi-Fi based pump automation by tank water %',
+    description: 'Wi-Fi based pump automation using ESP8266, ESPHome, Ultrasonic sensor, and SSR-40DA, integrated with Home Assistant for smart control by tank water %.',
     link: '/blog/pump',
     uid: 'blog-1',
   },
