@@ -62,7 +62,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     title: 'Do not Trash It, Server-ify It: Why Your Old Tech Deserves a Second Life',
     description: "Discover why Single Board Computers (SBCs) are worth considering in 2025. From affordability and versatility to DIY projects and edge computing, learn how SBCs can power innovation and everyday use cases.",
-    link: '/blog/sbc',
+    link: '/blog/homeserver',
     uid: 'blog-1',
   },
   {
