@@ -60,16 +60,22 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    title: 'Do not Trash It, Server-ify It: Why Your Old Tech Deserves a Second Life',
+    description: "Discover why Single Board Computers (SBCs) are worth considering in 2025. From affordability and versatility to DIY projects and edge computing, learn how SBCs can power innovation and everyday use cases.",
+    link: '/blog/sbc',
+    uid: 'blog-1',
+  },
+  {
     title: 'Wi-Fi based pump automation by tank water %',
     description: 'Wi-Fi based pump automation using ESP8266, ESPHome, Ultrasonic sensor, and SSR-40DA, integrated with Home Assistant for smart control by tank water %.',
     link: '/blog/pump',
-    uid: 'blog-1',
+    uid: 'blog-2',
   },
   {
     title: 'Why You Should Consider Buying Single Board Computers (SBCs) in 2025',
     description: "Discover why Single Board Computers (SBCs) are worth considering in 2025. From affordability and versatility to DIY projects and edge computing, learn how SBCs can power innovation and everyday use cases.",
     link: '/blog/sbc',
-    uid: 'blog-2',
+    uid: 'blog-3',
   }
 ]
 
