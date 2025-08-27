@@ -61,7 +61,7 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
 export const BLOG_POSTS: BlogPost[] = [
   {
     title: 'Do not Trash It, Server-ify It: Why Your Old Tech Deserves a Second Life',
-    description: "Discover why Single Board Computers (SBCs) are worth considering in 2025. From affordability and versatility to DIY projects and edge computing, learn how SBCs can power innovation and everyday use cases.",
+    description: "Give your old laptop a new life as a homeserver to reclaim your data privacy and cut streaming costs.",
     link: '/blog/homeserver',
     uid: 'blog-1',
   },
